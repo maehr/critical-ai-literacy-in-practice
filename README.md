@@ -13,25 +13,15 @@ This repository contains Lessons from Current DH Projects. The data in this repo
 
 The structure of this repository follows the [Advanced Structure for Data Analysis](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-advanced.html) of _The Turing Way_ and is organized as follows:
 
-- `analysis/`: scripts and notebooks used to analyze the data
-- `assets/`: images, logos, etc. used in the README and other documentation
-- `build/`: scripts and notebooks used to build the data
-- `data/`: data files
-- `documentation/`: documentation for the data and the repository
-- `project-management/`: project management documents (e.g., meeting notes, project plans, etc.)
-- `src/`: source code for the data (e.g., scripts used to collect or process the data)
-- `test/`: tests for the data and source code
-- `report.md`: a report describing the analysis of the data
+- `presentation/`: Contains presentation materials.
 
-## Data Description
+## Presentation Description
 
-- This repository contains research data and analysis related to critical AI literacy in practice, focusing on lessons learned from current Digital Humanities (DH) projects.
-- The data includes case studies, analysis scripts, and documentation examining how AI literacy is implemented and practiced in real-world DH contexts.
-- All data has been collected and processed according to open research standards and best practices for reproducible research.
+- TODO
 
 ## Use
 
-These data are openly available to everyone and can be used for any research or educational purpose. If you use this data in your research, please cite as specified in [CITATION.cff](CITATION.cff). The following citation formats are also available through _Zenodo_:
+These data are openly available to everyone and can be used for any research or educational purpose. If you use this data in your research, please cite as specified in `CITATION.cff`. The following citation formats are also available through _Zenodo_:
 
 - [BibTeX](https://zenodo.org/record/17086257/export/hx)
 - [CSL](https://zenodo.org/record/17086257/export/csl)
