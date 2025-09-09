@@ -36,7 +36,7 @@ jobs:
 
   build-optimize:
     name: Build, Optimize, and Upload Artifacts
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Check out repository
@@ -80,7 +80,7 @@ jobs:
 
       - name: Convert Reveal.js slides to PDF
         run: |
-          npx decktape --chrome-arg=--no-sandbox reveal _site/presentation/index.html _site/presentation/presentation.pdf
+          npx decktape --headless reveal _site/presentation/index.html _site/presentation/presentation.pdf
 
         continue-on-error: true
 
