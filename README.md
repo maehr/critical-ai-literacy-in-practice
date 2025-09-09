@@ -32,21 +32,27 @@ This research explores critical AI literacy in digital humanities practice throu
 Our research identifies six key components of critical AI literacy for digital humanities scholars:
 
 ### 1. Technical Literacy
+
 Understanding how AI systems work, their capabilities and limitations, particularly large language models and their training processes.
 
-### 2. Epistemological Awareness  
+### 2. Epistemological Awareness
+
 Questioning what counts as knowledge and how AI shapes knowledge production in scholarly research.
 
 ### 3. Ethical Evaluation
+
 Considering consent, privacy, transparency, and accountability in AI-assisted research workflows.
 
 ### 4. Social Impact Assessment
+
 Examining power structures, equity issues, and broader implications of AI adoption in academia.
 
 ### 5. Practical Application
+
 Developing workflows that maintain scholarly rigor while leveraging AI capabilities effectively.
 
 ### 6. Continuous Learning
+
 Staying informed as AI technology evolves rapidly and adapting practices accordingly.
 
 ## Swiss Digital Humanities Projects Using AI
@@ -54,23 +60,29 @@ Staying informed as AI technology evolves rapidly and adapting practices accordi
 This research documents several innovative approaches to AI integration in Swiss DH projects:
 
 ### Re-Experiencing History with AI (University of Zurich)
+
 The AIncient Studies Lab has developed an interactive platform for generating historically grounded visualizations of Classical antiquity using fine-tuned image and video generation models.
 
 ### Mini-Muse: Cultural Archive Access (SUPSI & ETH Library)
+
 A pilot project exploring NLP and data visualization for exploratory access to digitized historical publications in the E-Periodica archive.
 
 ### Alt Text Generation (Stadt.Geschichte.Basel, University of Basel)
+
 An open-source pipeline that enhances Dublin Core metadata by generating WCAG-compliant alt texts for historical sources and objects.
 
 ### Humanities Data Benchmark (RISE, University of Basel)
+
 An open benchmark suite testing large language and multimodal models on humanities-relevant visual tasks, providing public leaderboards for model performance.
 
 ## Educational Initiatives
 
 ### University of Bern: Decoding Inequality
+
 A critical examination of AI systems with focus on inequality and bias issues.
 
-### University of Zurich: ChatGPT and Beyond  
+### University of Zurich: ChatGPT and Beyond
+
 Interdisciplinary approaches to AI literacy combining practical skills with critical analysis.
 
 ## Repository Structure
@@ -78,7 +90,7 @@ Interdisciplinary approaches to AI literacy combining practical skills with crit
 The structure of this repository follows best practices for open research:
 
 - `presentation/`: RevealJS presentation materials and slides
-- `documentation/`: Additional research documentation  
+- `documentation/`: Additional research documentation
 - `analysis/`: Research analysis scripts and notebooks
 - `data/`: Research data and findings
 - `src/`: Source code for tools and utilities
@@ -95,7 +107,7 @@ This repository includes a comprehensive presentation on Critical AI Literacy in
 To view the presentation locally:
 
 ```bash
-# Preview the presentation  
+# Preview the presentation
 cd presentation
 quarto preview
 ```
@@ -193,7 +205,7 @@ After creating your project from this template (either via Codespaces or local s
 
 ## Use
 
-These research materials are openly available under open licenses and can be used for educational and research purposes. If you use this research in your work, please cite as specified in `CITATION.cff`. 
+These research materials are openly available under open licenses and can be used for educational and research purposes. If you use this research in your work, please cite as specified in `CITATION.cff`.
 
 The following citation formats are also available through _Zenodo_:
 
