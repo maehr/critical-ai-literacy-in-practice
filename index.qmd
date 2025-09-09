@@ -1,5 +1,6 @@
 ---
-title: Open Research Data
+title: "Critical AI Literacy in Practice"
+subtitle: "Lessons from Current DH Projects"
 format:
   html:
     embed-resources: true

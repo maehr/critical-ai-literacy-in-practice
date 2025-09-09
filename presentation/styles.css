@@ -1,40 +1,15 @@
-/* Custom styles for the presentation */
-
-.center {
-	text-align: center;
+.footer-link-box {
+	border-radius: 6px;
+	padding: 0.4em 0.8em;
+	font-size: 0.85em;
+	display: inline-block;
+	color: white !important;
+	background-color: #111 !important;
 }
 
-.reveal .progress {
-	color: #2780e3;
-}
-
-.reveal .slide-number {
-	color: #2780e3;
-}
-
-/* Custom fragment animations */
-.fragment.fade-in-then-semi-out {
-	opacity: 0;
-	visibility: inherit;
-}
-
-.fragment.fade-in-then-semi-out.visible {
-	opacity: 0.5;
-	visibility: inherit;
-}
-
-.fragment.fade-in-then-semi-out.current-fragment {
-	opacity: 1;
-	visibility: inherit;
-}
-
-/* Code block styling */
-.reveal pre code {
-	max-height: 400px;
-}
-
-/* Image styling */
-.reveal img {
-	max-width: 90%;
-	height: auto;
+.reveal section.bg-white h2,
+.reveal section.bg-white h3 {
+	display: block;
+	width: fit-content;
+	background-color: rgba(255, 255, 255, 0.8) !important;
 }

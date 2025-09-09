@@ -78,6 +78,10 @@ jobs:
         with:
           to: html
 
+      - name: Convert Reveal.js slides to PDF
+        run: |
+          npx decktape reveal _site/presentation/index.html _site/presentation/presentation.pdf
+
       - name: JamPack Optimization
         run: |
           npx @divriots/jampack ./_site
@@ -90,7 +94,7 @@ jobs:
 
       - name: Upload static files as artifact
         id: deployment
-        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+        uses: actions/upload-pages-artifact@v4 # or specific "vX.X.X" version tag for this action
         with:
           path: _site
 
