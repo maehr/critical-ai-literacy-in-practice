@@ -1,9 +1,9 @@
 meta:
-  name: REPO_NAME
+  name: critical-ai-literacy-in-practice
   link:
-    home: https://USERNAME.github.io/REPO_NAME
-    github: https://github.com/USERNAME
+    home: https://maehr.github.io/critical-ai-literacy-in-practice
+    github: https://github.com/maehr
   description: |
-    SHORT_DESCRIPTION
+    Lessons from Current DH Projects
 
 # Go to https://quarto.org/docs/authoring/brand.html to learn more about multiformat branding with brand.yml

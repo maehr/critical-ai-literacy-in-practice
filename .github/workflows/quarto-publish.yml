@@ -36,7 +36,7 @@ jobs:
 
   build-optimize:
     name: Build, Optimize, and Upload Artifacts
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Check out repository
@@ -75,8 +75,12 @@ jobs:
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
+
+      - name: Convert Reveal.js slides to PDF
+        run: |
+          npx decktape reveal _site/presentation/index.html _site/presentation/presentation.pdf
+
+        continue-on-error: true
 
       - name: JamPack Optimization
         run: |
@@ -90,7 +94,7 @@ jobs:
 
       - name: Upload static files as artifact
         id: deployment
-        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+        uses: actions/upload-pages-artifact@v4 # or specific "vX.X.X" version tag for this action
         with:
           path: _site
 

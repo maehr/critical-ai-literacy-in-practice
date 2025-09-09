@@ -1,0 +1,376 @@
+---
+title: "Critical AI Literacy in Practice"
+subtitle: "Lessons from Current DH Projects"
+authors:
+  - name: Moritz Mähr
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliation:
+    - "University of Basel"
+    - "University of Bern"
+    roles:
+      - author
+    corresponding: true
+date: 2025-09-09
+lang: en-US
+section-titles: true
+keywords:
+  - Critical AI Literacy
+  - Digital Humanities
+  - Large Language Models
+  - Research Ethics
+abstract: |
+  This presentation explores critical AI literacy in digital humanities practice, examining current projects and their approaches to responsible AI implementation. Through case studies from Swiss institutions, we demonstrate how scholars can engage critically with AI tools while maintaining scholarly rigor and ethical standards.
+key-points:
+  - AI is pervasive in academic research and publication
+  - Understanding AI history helps contextualize current challenges
+  - Critical AI literacy frameworks can guide responsible implementation
+  - Practical examples from Swiss DH projects demonstrate best practices
+format:
+  # revealjs:
+  #   theme: simple
+  #   css: styles.css
+  #   slide-number: true
+  #   incremental: false
+  #   # transition: slide
+  #   code-line-numbers: true
+  #   embed-resources: true
+  #   menu:
+  #     side: right
+  #     width: normal
+  #   height: 900
+  #   width: 1600
+  #   preview-links: auto
+  #   self-contained: true
+  #   output-file: index-default.html
+  clean-revealjs:
+    # self-contained: true
+    css: styles.css
+    output-file: index.html
+output-dir: "_slides"
+# Create a PDF from the HTML output
+# rm -rf _slides/ && quarto publish quarto-pub && npx decktape reveal _slides/index.html _slides/index.pdf
+# rm -rf _slides/ && quarto render && (cd _slides && npx @divriots/jampack . && npx decktape reveal index.html index.pdf)
+# quarto publish quarto-pub --no-render
+---
+
+# AI is Everywhere, also in Science {background-color="#40666e"}
+
+## AI in Publications {.bg-white data-background-image="./images/Screenshot_2025-09-02_at_13.55.11.png" data-background-size="stretch" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Article](https://www.tudelft.nl/en/2025/eemcs/scientific-study-exposes-publication-fraud-involving-widespread-use-of-ai){.footer-link-box preview-link="false"}
+:::
+
+::: notes
+Scientific Study Exposes Publication Fraud Involving Widespread Use of AI News - 23 June 2025 - Communication EWI A new study reveals the systematic use of generative artificial intelligence (GenAI) for the creation and publication of deceptive scientific articles over several years in the Global International Journal of Innovative Research. The issue came to light in 2024 when a fully fabricated article was falsely attributed to the study’s author.
+:::
+
+## AI in Manuscripts {.bg-white data-background-image="./images/Screenshot_2025-09-02_at_13.50.41.png" data-background-size="stretch" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Article](https://www.nature.com/articles/d41586-025-02172-y){.footer-link-box preview-link="false"}
+:::
+
+::: notes
+NEWS 11 July 2025 Scientists hide messages in papers to game AI peer review Some studies containing instructions in white text or small font — visible only to machines — will be withdrawn from preprint servers.
+:::
+
+## AI in Experiments {.bg-white data-background-image="./images/Screenshot_2025-09-02_at_11.22.46.png" data-background-size="stretch" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Article](https://www.swissinfo.ch/eng/swiss-ai/fake-news-ai-study-when-researchers-do-more-harm-than-good/89435725){.footer-link-box preview-link="false"}
+:::
+
+::: notes
+A controversial fake news study, carried out by Swiss-based researchers on the social media platform Reddit, has highlighted the ethical responsibilities and challenges of conducting studies on society.
+:::
+
+## AI in Experiments {.bg-white data-background-image="./images/Screenshot_2025-09-02_at_11.23.22.png" data-background-size="stretch" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Article](https://www.swissinfo.ch/eng/swiss-ai/fake-news-ai-study-when-researchers-do-more-harm-than-good/89435725){.footer-link-box preview-link="false"}
+:::
+
+::: notes
+A controversial fake news study, carried out by Swiss-based researchers on the social media platform Reddit, has highlighted the ethical responsibilities and challenges of conducting studies on society.
+:::
+
+# What can we do about it? {background-color="#40666e"}
+
+## We can
+
+1. Understand the technology and its history
+
+# A short history of AI {background-color="#40666e"}
+
+::: notes
+
+- **1950 – Turing’s Imitation Game:** Alan Turing reframes the question of machine intelligence as a **dialogue test**, asking if a computer’s replies can indistinguishably mimic human conversation[\[7\]](file:///file-FU3K3wVEo8RSMojzUj1pqd#:~:text=,2). This philosophical turn placed **language and interpretation** at AI’s core.
+- **1960s – Early NLP & ELIZA:** Joseph Weizenbaum’s **ELIZA (1966)** chatbot uses simple keyword rules yet gives an illusion of understanding – a startling lesson in how interaction design (and human psychology) shape perceptions of AI. Around the same time, linguists and computer scientists begin collaborating (e.g. machine translation as a cryptographic puzzle in 1949, the ALPAC report in 1966 emphasizing evaluation).
+- **1980s–2000s – From Rules to Statistics:** The late 80s see a *“statistical turn”* in NLP (IBM’s *Candide* translation system). By 2002, standardized metrics like **BLEU** for machine translation become dominant\[, reflecting a new empirical, benchmark-driven mindset. Data-driven techniques overshadow earlier logic-based approaches, but also raise concerns about what gets lost (context, nuance) when focusing on narrow metrics.
+- **2010s – The Deep Learning Era:** In 2013, **Word2Vec** demonstrated Firthian linguistics in action: *“You shall know a word by the company it keeps.”* Words were embedded as vectors, operationalizing the idea that **meaning comes from usage context**. 2017’s **Transformer architecture** (Vaswani et al.) revolutionized NLP by enabling much larger context and parallel processing. This paved the way for **BERT (2018)** and the family of **GPT models (2018–2023)** – culminating in ChatGPT and GPT-4, which brought versatile, human-like language generation to the public. (The term “LLM” entered common use, though its roots trace back through decades of linguistics and AI research.)
+:::
+
+## Theoretical AI {.bg-white data-background-image="./images/Screenshot_2025-09-02_at_11.12.20.png" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+### 1950: Imitation Game {.bg-white}
+
+::: footer
+[Paper](https://www.jstor.org/stable/2251299){.footer-link-box preview-link="true"}
+:::
+
+## Theoretical AI
+
+### 1950: Imitation Game {.bg-white}
+
+> The new form of the problem can be described in terms of a game which we call the 'imitation game'. It is played with three people, a man (A), a woman (B), and an interrogator (C) who may be of either sex. The interrogator stays in a room apart from the other two.\
+> (...)\
+> We now ask the question, 'What will happen when a machine takes the part of A in this game?
+
+## Symbolic AI {.bg-white data-background-image="./images/Screenshot_2025-09-08_at_20.01.57.png" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+### 1966: ELIZA {.bg-white}
+
+::: footer
+[BBC footage](https://youtu.be/Ngma1gbcLEw?t=39){.footer-link-box preview-link="false"}
+:::
+
+::: notes
+ELIZA is an early natural language processing computer program created from 1964 to 1966 at the MIT Artificial Intelligence Laboratory by Joseph Weizenbaum. Created to demonstrate the superficiality of communication between man and machine, Eliza simulated conversation by using a 'pattern matching' and substitution methodology that gave users an illusion of understanding on the part of the program, but had no built in framework for contextualising events. <https://en.wikipedia.org/wiki/File:ELIZA_conversation.png>
+:::
+
+## Rule-based AI {.bg-white data-background-image="./images/item_1695664644591.jpeg" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+### Until late 1980s: Expert Systems & Machine Translation {.bg-white}
+
+::: footer
+[The Selectric on display in the IBM pavilion at the 1964-65 World's Fair in New York.](https://www.ibm.com/history/machine-aided-translation){.footer-link-box preview-link="true"}
+:::
+
+::: notes
+<https://en.wikipedia.org/wiki/Machine_translation> <https://en.wikipedia.org/wiki/Rule-based_machine_translation> <https://en.wikipedia.org/wiki/Expert_system> <https://www.ibm.com/history/machine-aided-translation>
+:::
+
+## Statistical AI {.bg-white data-background-video="./images/Topic_model_scheme.webm" data-background-size="contain" data-background-video-loop="true"}
+
+### Late 1990s/early 2000s: Topic Modeling & Data Mining {.bg-white}
+
+::: footer
+[Topic Modeling](https://en.wikipedia.org/wiki/Topic_model){.footer-link-box preview-link="true"}
+:::
+
+::: notes
+Statistical approaches to AI emerged in the late 1990s and early 2000s, focusing on extracting patterns from large datasets. Topic modeling, developed by David Blei and others, became particularly important for digital humanities - allowing researchers to discover hidden thematic structures in large text corpora. This period also saw the rise of data mining techniques and statistical machine translation systems like IBM's statistical models. <https://en.wikipedia.org/wiki/Topic_model> <https://en.wikipedia.org/wiki/Data_mining> <https://en.wikipedia.org/wiki/Statistical_machine_translation>
+:::
+
+## Neural AI {data-background-image="./images/Word_vector_illustration.jpg" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+### 2010s: Deep Learning & Large Language Models {.bg-white}
+
+::: footer
+[Word2Vec](https://en.wikipedia.org/wiki/Word2vec){.footer-link-box preview-link="true"}
+:::
+
+::: notes
+
+- **2013: Word2Vec** - Distributed representations of words
+- **2014: Sequence-to-sequence models** - Neural machine translation
+- **2017: Transformer architecture** - "Attention is All You Need"
+- **2018: BERT** - Bidirectional encoder representations
+- **2019: GPT-2** - Generative pre-trained transformers
+- **Neural networks learn patterns** from massive text corpora
+
+The 2010s marked the neural revolution in AI. Word2Vec showed that word meanings could be captured as mathematical vectors. The Transformer architecture (2017) became the foundation for modern LLMs by introducing the attention mechanism. BERT demonstrated the power of bidirectional context understanding, while the GPT series showed that large-scale generative models could produce human-like text. This decade established the foundations for today's AI systems. <https://en.wikipedia.org/wiki/Neural_machine_translation> <https://upload.wikimedia.org/wikipedia/commons/3/3f/Word_vector_illustration.jpg>
+:::
+
+## Generative AI {data-background-image="./images/Screenshot_2025-09-08_at_09.48.10.png" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+### Today: Generative AI & Foundation Models {.bg-white}
+
+::: notes
+
+- **Foundation models** trained on massive datasets (text, images, code)
+- **Few-shot learning** - models adapt to new tasks with minimal examples
+- **Multimodal capabilities** - text, images, audio, video generation
+- **Scale effects** - larger models show emergent capabilities
+- **Transformer-based architectures** process sequences of tokens
+- **Pre-training + fine-tuning** paradigm for specialization Today's generative AI systems are built on foundation models - large neural networks trained on diverse data. They work by learning statistical patterns in token sequences, whether text, image patches, or other data types. The key insight is that scale matters: larger models with more parameters and training data exhibit emergent capabilities not seen in smaller models. These systems don't "understand" in a human sense, but rather excel at pattern matching and statistical prediction.
+:::
+
+## Known problems of Generative AI
+
+- **Bias** in training data
+- Lack of **explainability**
+- Lack of **transparency**
+- Lack of **accountability**
+- Lack of **reproducibility**
+- **Environmental impact**
+- **Ethical** issues
+- **Legal** issues
+- **Social** issues
+- **Epistemological** issues
+- ...
+
+# What can we do about it? {background-color="#40666e"}
+
+## We can
+
+1. Understand the technology and its history
+2. Understand the limitations and problems of AI
+
+## Critical AI Studies {.bg-white data-background-image="./images/Screenshot_2025-09-08_at_20.05.54.png" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Paper](https://dl.acm.org/doi/10.1145/3442188.3445922){.footer-link-box preview-link="true"}
+:::
+
+# Teaching AI Literacy {background-color="#40666e"}
+
+## Critical AI Literacy
+
+- **Technical literacy**: Understanding how AI systems work, their capabilities and limitations
+- **Epistemological awareness**: Questioning what counts as knowledge and how AI shapes it
+- **Ethical evaluation**: Considering consent, privacy, transparency, and accountability
+- **Social impact assessment**: Examining power structures, equity, and broader implications
+- **Practical application**: Developing workflows that maintain scholarly rigor
+- **Continuous learning**: Staying informed as technology evolves rapidly
+
+::: notes
+Critical AI literacy goes beyond technical skills to encompass a holistic understanding of AI's role in knowledge production. It requires scholars to be technically informed while maintaining critical distance. This means understanding both the potential and pitfalls of AI tools, developing ethical frameworks for their use, and considering their broader social implications. For digital humanists, this translates to maintaining traditional scholarly values while engaging productively with new technologies.
+:::
+
+## Decoding Inequality (UniBe) {.bg-white data-background-image="./images/Screenshot_2025-09-08_at_10.07.18.png" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Course Description](https://dhbern.github.io/decoding-inequality-2025/){.footer-link-box preview-link="true"}
+:::
+
+## ChatGPT and Beyond (UZH) {.bg-white data-background-image="./images/Screenshot_2025-09-08_at_10.07.12.png" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Course Description](https://www.sts.uzh.ch/en/students/pastsemesters/coursesFS25/Future-Skills/ChatGPT-and-Beyond--Interdisciplinary-Approaches-to-AI-Literacy.html){.footer-link-box preview-link="false"}
+:::
+
+# What can we do about it? {background-color="#40666e"}
+
+## We can
+
+1. Understand the technology and its history
+2. Understand the limitations and problems of AI
+3. Make better use of AI tools
+
+# DH in Action: Swiss Projects Using LLMs (Tools & Platforms) {background-color="#40666e"}
+
+## Re-Experiencing History with AI (UZH) {.bg-white data-background-video="./images/fotor-ai-20250829152328.mp4" data-background-size="contain" data-background-video-loop="true"}
+
+::: footer
+[Project](https://www.hist.uzh.ch/de/fachbereiche/altegeschichte/lehrstuehle/maier/AIncient-Studies-Lab/Projects/Re-Experiencing-History.html){.footer-link-box preview-link="true"}
+:::
+
+::: notes
+The University of Zurich’s “AIncient Studies Lab” has developed Re-Experiencing History, an AI-driven interactive platform that lets users generate historically grounded visualizations of Classical antiquity—from Roman triumphal processions to everyday scenes in ancient Greece. The tool employs prompt-based interfaces and fine-tuned image and video generation models, including DALL-E 3 and a specialized version of Flux.dev, incorporating latest research to avoid anachronisms and enhance authenticity. It supports user-guided experimentation with different visual models and prompt adjustments, enabling applications in education, museum exhibitions, research, documentaries, and tourism. Users can co-create their own interpretations, fostering deeper engagement with historical contexts. The platform also embodies cross-disciplinary collaboration between ancient history, computational linguistics, classical philology, digital humanities, and visualisation sciences. It will be made accessible soon via a web app requiring an account.
+:::
+
+## Data visualization to access cultural archives (SUPSI & ETH Library) {.bg-white data-background-image="./images/mini-muse-prototype.webp" data-background-size="contain" data-background-video-loop="true"}
+
+::: footer
+[Project](https://mini-muse.github.io/project/){.footer-link-box preview-link="true"}
+:::
+
+::: notes
+**Mini-Muse** is a 12-month pilot exploring NLP and data visualization for exploratory access to digitized historical publications (E-Periodica).
+
+- **Goals**: Identify user needs, build a prototype with NLP annotations and a visual GUI, test usability.
+- **Method**: Four work packages—user research, NLP development (rule-based + LLM, graph database, API), prototype design, evaluation with ETH Library.
+- **Dissemination**: Presentations in 2025 at ETH Zurich and Digital Heritage (Siena).
+- **Limits**: Small corpus (25 German political articles), usability focus over scalability.
+- **Next steps**: Expand corpus, refine visualization, ensure FAIR compliance.
+
+Do you want me to compress this further into a 3-bullet executive summary?
+:::
+
+## Generating alt text for historical sources and objects (Stadt.Geschichte.Basel, University of Basel) {.bg-white data-background-image="./images/Screenshot_2025-09-08_at_09.57.37.png" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Project](https://maehr.github.io/dublin-core-metadata-enhancer/){.footer-link-box preview-link="true"}
+:::
+
+::: notes
+Open-source pipeline that enriches Dublin Core metadata by fetching images, analyzing them with GPT-5, and generating WCAG-compliant alt texts. Reproducible, FAIR-aligned, licensed for open research.
+:::
+
+## LLM benchmarking for humanities tasks (RISE, UNIBAS) {.bg-white data-background-image="./images/Screenshot_2025-09-08_at_10.00.50.png" data-background-size="contain" data-background-repeat="no-repeat" data-background-position="center"}
+
+::: footer
+[Project](https://maehr.github.io/dublin-core-metadata-enhancer/documentation/){.footer-link-box preview-link="true"}
+:::
+
+::: notes
+Humanities Data Benchmark (RISE-UNIBAS) is an open benchmark suite to test large language and multimodal models on humanities-relevant visual tasks.
+
+**Core elements**
+
+- Curated datasets (e.g. Fraktur OCR, bibliographic data, metadata extraction, Zettelkatalog)
+- Task definitions, prompts, and ground-truth answers
+- Automated evaluation scripts
+- Public leaderboard with model results
+
+**Context**
+
+- Released August 2025, v0.2.0, GPL-3.0 license
+- Developed at University of Basel (Hindermann, Marti, Serif, Burkhardt)
+- Data + code openly available (\~7.5 GB)
+
+**Use** For researchers comparing model performance on historical/visual humanities data.
+
+**Limits** Covers only selected visual tasks; evaluation depends on dataset quality and chosen metrics.
+
+Would you like me to map how this benchmark compares to existing ones like HSSBench or MMLU?
+:::
+
+## Bibliography {.smaller}
+
+- Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. «On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜». In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency*, 610–23. FAccT ’21. New York, NY, USA: Association for Computing Machinery, 2021. <https://doi.org/10.1145/3442188.3445922>.
+- Long, Duri, and Brian Magerko. «What Is AI Literacy? Competencies and Design Considerations». In *Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems*, 1–16. CHI ’20. New York, NY, USA: Association for Computing Machinery, 2020. <https://doi.org/10.1145/3313831.3376727>.
+- Loukissas, Yanni A. *All Data Are Local: Thinking Critically in a Data-Driven Society*. Cambridge, Massachusetts: The MIT Press, 2019. <https://doi.org/10.7551/mitpress/11543.001.0001>.
+- Mueller, Milton L. «It’s Just Distributed Computing: Rethinking AI Governance». *Telecommunications Policy*, Februar 2025, 102917. <https://doi.org/10.1016/j.telpol.2025.102917>.
+- O’Neil, Cathy. *Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy*. First edition. New York: Crown Publishing Group, 2016.
+- Offert, Fabian, and Ranjodh Singh Dhaliwal. «The Method of Critical AI Studies, A Propaedeutic», 10. Dezember 2024. <https://doi.org/10.48550/arXiv.2411.18833>.
+
+::: notes
+ELIZA conversation screenshot
+
+- **Caption:** Screenshot of a terminal session with ELIZA, Joseph Weizenbaum’s 1966 chatbot, simulating a psychotherapy dialogue.
+- **Alt text:** Text-based interface showing an early interaction with ELIZA, where the program responds to user statements with reflective questions.
+
+Woman typing at a computer terminal (historical photo)
+
+- **Caption:** Demonstration of early computer interaction, likely during a public exhibition in the 1960s.
+- **Alt text:** Black-and-white photo of a woman using a computer terminal in a public setting, with onlookers watching behind her.
+
+Turing’s 1950 paper
+
+- **Caption:** Title page of Alan Turing’s 1950 article “Computing Machinery and Intelligence” in *Mind*.
+- **Alt text:** Journal cover page showing “MIND: A Quarterly Review of Psychology and Philosophy” with Alan Turing’s article “Computing Machinery and Intelligence.”
+
+Swissinfo fake news study headline
+
+- **Caption:** Swissinfo.ch article headline about a Swiss fake news study testing ethical boundaries in research.
+- **Alt text:** News website screenshot showing article title “How a fake news study tested ethical research boundaries” with an image of a person wearing a “Fake News” T-shirt.
+
+Swissinfo fake news study article body
+
+- **Caption:** Swissinfo.ch article describing how researchers covertly used AI to manipulate debates on Reddit.
+- **Alt text:** Screenshot of Swissinfo.ch article detailing a study linked to the University of Zurich, which deployed AI bots under pseudonyms to spread misinformation on Reddit.
+
+Nature article on gaming AI peer review
+
+- **Caption:** Nature article reporting that scientists embedded hidden instructions in papers to trick AI-based peer review.
+- **Alt text:** News article screenshot titled “Scientists hide messages in papers to game AI peer review,” describing manipulation of AI tools in academic publishing.
+
+TU Delft publication fraud study
+
+- **Caption:** TU Delft report exposing systematic use of generative AI in fraudulent scientific publications.
+- **Alt text:** University news page featuring Professor Diomidis Spinellis and an article titled “Scientific Study Exposes Publication Fraud Involving Widespread Use of AI.”
+:::

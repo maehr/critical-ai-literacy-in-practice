@@ -1,1 +1,23 @@
-# Go to https://citation-file-format.github.io/ to learn more about the Citation File Format.
+cff-version: 1.2.0
+message: 'If you use this software, please cite it as below.'
+type: software
+title: 'Critical AI Literacy in Practice'
+abstract: 'Lessons from Current DH Projects - A research repository examining how AI literacy is implemented and practiced in real-world Digital Humanities contexts.'
+authors:
+  - family-names: 'Mähr'
+    given-names: 'Moritz'
+    orcid: 'https://orcid.org/0000-0000-0000-0000'
+repository-code: 'https://github.com/maehr/critical-ai-literacy-in-practice'
+url: 'https://maehr.github.io/critical-ai-literacy-in-practice'
+license: 'AGPL-3.0'
+license-url: 'https://github.com/maehr/critical-ai-literacy-in-practice/blob/main/LICENSE-AGPL.md'
+keywords:
+  - 'artificial intelligence'
+  - 'digital humanities'
+  - 'AI literacy'
+  - 'research'
+  - 'practice'
+identifiers:
+  - type: doi
+    value: '10.5281/zenodo.17086256'
+    description: 'Zenodo DOI'
