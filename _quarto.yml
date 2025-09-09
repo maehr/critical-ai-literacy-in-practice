@@ -26,8 +26,10 @@ website:
     left:
       - text: Readme
         href: index.qmd
-      - text: Report
-        href: report.md
+      - text: Presentation HTML
+        href: presentation/index.qmd
+      - text: Presentation PDF
+        href: presentation/presentation.pdf
 
   sidebar:
     contents:
@@ -46,8 +48,10 @@ website:
             href: LICENSE-AGPL.md
           - text: Security
             href: SECURITY.md
-      - href: report.md
-        contents: project-management/*
+      - href: presentation/index.qmd
+        text: Presentation HTML
+      - href: presentation/presentation.pdf
+        text: Presentation PDF
 
 format:
   html:
