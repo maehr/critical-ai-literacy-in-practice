@@ -1,0 +1,199 @@
+---
+title: "Critical AI Literacy in Practice"
+subtitle: "Lessons from Current DH Projects"
+authors:
+  - name: Moritz Mähr
+    orcid: 0000-0002-1367-1618
+    email: moritz.maehr@gmail.com
+    affiliation:
+    - "University of Basel"
+    - "University of Bern"
+    roles:
+      - author
+    corresponding: true
+date: 2025-09-09
+lang: en-US
+section-titles: true
+keywords:
+  - Critical AI Literacy
+  - Digital Humanities
+  - Large Language Models
+  - Research Ethics
+abstract: |
+  This presentation explores critical AI literacy in digital humanities practice, examining current projects and their approaches to responsible AI implementation. Through case studies from Swiss institutions, we demonstrate how scholars can engage critically with AI tools while maintaining scholarly rigor and ethical standards.
+key-points:
+  - AI is pervasive in academic research and publication
+  - Understanding AI history helps contextualize current challenges
+  - Critical AI literacy frameworks can guide responsible implementation
+  - Practical examples from Swiss DH projects demonstrate best practices
+format:
+  clean-revealjs:
+    css: styles.css
+    output-file: index.html
+output-dir: "_slides"
+---
+
+# AI is Everywhere, also in Science {background-color="#40666e"}
+
+## AI in Publications
+
+Recent studies reveal systematic use of AI in academic publishing:
+
+- Widespread use of GenAI for creating deceptive scientific articles
+- Hidden instructions in papers to game AI peer review systems
+- Fabricated content falsely attributed to researchers
+
+::: notes
+Scientific Study Exposes Publication Fraud Involving Widespread Use of AI. The issue came to light in 2024 when a fully fabricated article was falsely attributed to researchers.
+:::
+
+## AI in Experiments
+
+Controversial research practices involving AI:
+
+- Swiss researchers conducted fake news studies on Reddit
+- Ethical responsibilities and challenges highlighted
+- Questions about harm vs. research value
+
+::: notes
+A controversial fake news study, carried out by Swiss-based researchers on the social media platform Reddit, has highlighted the ethical responsibilities and challenges of conducting studies on society.
+:::
+
+# What can we do about it? {background-color="#40666e"}
+
+## We can
+
+1. **Understand the technology and its history**
+2. **Understand the limitations and problems of AI**  
+3. **Make better use of AI tools**
+
+# A short history of AI {background-color="#40666e"}
+
+## 1950: Theoretical AI - Imitation Game
+
+Alan Turing reframes machine intelligence as a dialogue test:
+
+> The new form of the problem can be described in terms of a game which we call the 'imitation game'. (...) We now ask the question, 'What will happen when a machine takes the part of A in this game?'
+
+## 1966: Symbolic AI - ELIZA
+
+Joseph Weizenbaum's ELIZA chatbot:
+- Uses simple keyword rules
+- Creates illusion of understanding
+- Demonstrates superficiality of human-machine communication
+
+## Late 1980s: Rule-based AI
+
+Expert systems and early machine translation:
+- Logic-based approaches
+- Rule-driven knowledge representation
+- Limited by brittle rule systems
+
+## Late 1990s/early 2000s: Statistical AI
+
+Statistical approaches emerge:
+- Topic modeling for discovering thematic structures
+- Data mining techniques
+- Statistical machine translation (IBM models)
+
+## 2010s: Neural AI - Deep Learning
+
+The neural revolution:
+- **2013: Word2Vec** - Distributed word representations
+- **2017: Transformer** - "Attention is All You Need" 
+- **2018: BERT** - Bidirectional context understanding
+- **2019: GPT-2** - Large-scale generative models
+
+## Today: Generative AI & Foundation Models
+
+Current capabilities:
+- **Foundation models** trained on massive datasets
+- **Few-shot learning** with minimal examples
+- **Multimodal capabilities** (text, images, audio, video)
+- **Scale effects** showing emergent abilities
+
+## Known problems of Generative AI
+
+- **Bias** in training data
+- Lack of **explainability** and **transparency**
+- Lack of **accountability** and **reproducibility**
+- **Environmental impact**
+- **Ethical, legal, and social issues**
+- **Epistemological** challenges
+
+# Critical AI Literacy Framework {background-color="#40666e"}
+
+## Critical AI Literacy Components
+
+- **Technical literacy**: Understanding capabilities and limitations
+- **Epistemological awareness**: Questioning knowledge production
+- **Ethical evaluation**: Consent, privacy, transparency, accountability  
+- **Social impact assessment**: Power structures and equity
+- **Practical application**: Maintaining scholarly rigor
+- **Continuous learning**: Staying informed as technology evolves
+
+# Teaching AI Literacy {background-color="#40666e"}
+
+## Swiss Educational Initiatives
+
+**Decoding Inequality (University of Bern)**
+- Critical examination of AI systems
+- Focus on inequality and bias
+
+**ChatGPT and Beyond (University of Zurich)**  
+- Interdisciplinary approaches to AI literacy
+- Practical skills development
+
+# Swiss DH Projects Using LLMs {background-color="#40666e"}
+
+## Re-Experiencing History with AI (UZH)
+
+**AIncient Studies Lab** interactive platform:
+- AI-driven historical visualizations
+- Fine-tuned image/video generation models
+- Historically grounded representations of Classical antiquity
+- Cross-disciplinary collaboration
+
+## Data visualization for cultural archives (SUPSI & ETH)
+
+**Mini-Muse** pilot project:
+- NLP and visualization for E-Periodica archive access
+- User research and prototype development
+- Graph database and API integration
+- FAIR compliance focus
+
+## Generating alt text for historical sources (University of Basel)
+
+**Stadt.Geschichte.Basel** accessibility project:
+- Open-source Dublin Core metadata enhancement
+- GPT-5 analysis for WCAG-compliant alt text generation
+- Reproducible, FAIR-aligned pipeline
+
+## LLM benchmarking for humanities tasks (RISE, UNIBAS)
+
+**Humanities Data Benchmark**:
+- Open benchmark suite for humanities-relevant tasks
+- Curated datasets (Fraktur OCR, bibliographic data)
+- Public leaderboard with model performance results
+- GPL-3.0 licensed, openly available
+
+# Conclusion {background-color="#40666e"}
+
+## Key Takeaways
+
+1. **AI is pervasive** in academic research and needs critical engagement
+2. **Historical understanding** provides essential context for current challenges
+3. **Critical AI literacy frameworks** can guide responsible implementation
+4. **Swiss DH projects** demonstrate practical approaches to ethical AI use
+5. **Continuous learning** is essential as technology evolves
+
+## Call to Action
+
+- Develop technical literacy while maintaining critical perspective
+- Implement ethical frameworks in research workflows
+- Engage with AI tools thoughtfully and transparently
+- Contribute to community knowledge and best practices
+
+---
+
+*Thank you for your attention. Questions and discussion welcome.*

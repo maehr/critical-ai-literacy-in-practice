@@ -1,0 +1,124 @@
+/*-- scss:defaults --*/
+
+// Custom colours and variables
+$jet: #131516;
+$accent: #107895;
+$accent2: #9a2515;
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,350,350i,400,400i&display=swap');
+
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+$presentation-heading-font: 'Roboto', sans-serif !default;
+$presentation-heading-color: $jet !default;
+$presentation-heading-font-weight: lighter;
+$presentation-font-size-root: 32px;
+
+// colors
+$body-color: $jet !default;
+$link-color: $accent !default;
+
+/*-- scss:rules --*/
+
+.reveal a {
+	line-height: 1.5em;
+}
+
+.reveal p {
+	font-weight: lighter;
+	margin-top: 1.25em;
+}
+
+// title and headings
+#title-slide {
+	text-align: left;
+
+	.title {
+		color: $body-color;
+		font-size: 1.4em;
+		font-weight: lighter;
+	}
+
+	.subtitle {
+		color: $accent;
+		font-style: italic;
+		margin-top: 0em;
+		font-weight: lighter;
+	}
+
+	.author,
+	.quarto-title-author-name {
+		color: $body-color;
+	}
+}
+
+.reveal h2 {
+	font-weight: lighter;
+	font-size: 1.4em;
+}
+
+.reveal h3 {
+	color: $accent;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 0.95em;
+}
+
+.reveal h4 {
+	color: $accent2;
+	font-weight: normal;
+	margin-top: 1.25em;
+}
+
+// alerts etc.
+.alert {
+	color: $accent2;
+}
+
+// lists
+.reveal ul {
+	font-weight: lighter;
+	padding-left: 16px;
+
+	li::marker {
+		color: mix($accent, white, 70%);
+	}
+}
+
+.reveal ol {
+	font-weight: lighter;
+	padding-left: 16px;
+
+	li::marker {
+		color: $accent;
+	}
+}
+
+// Move slide numbers to bottom-right
+.slide-number {
+	bottom: 6px !important;
+	right: 10px !important;
+	top: unset !important;
+	color: #777777 !important;
+}
+
+// tables
+.reveal table {
+	margin: auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 0.8em;
+}
+
+.reveal table th,
+.reveal table td {
+	border: none;
+	padding: 0.23em;
+	text-align: left;
+	font-weight: lighter;
+}
+
+.reveal table thead th {
+	font-weight: bold;
+	border-bottom: 2px solid #d3d3d3;
+}

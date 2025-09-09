@@ -1,62 +1,104 @@
-# GitHub template for FAIR and open research data
+# Critical AI Literacy in Practice
 
-This GitHub template is independent of the (research) data and its format. It follows the best practices for open research data as outlined in [The Turing Way](https://the-turing-way.netlify.app/). It uses [GitHub Actions](https://docs.github.com/en/actions) to manage releases, issues, and pull requests, [GitHub Pages](https://pages.github.com/) for documentation, and [Zenodo](https://zenodo.org/) for long-term archiving.
+This repository contains research materials and documentation for the project "Critical AI Literacy in Practice: Lessons from Current DH Projects". The research examines how digital humanities scholars can engage critically with AI tools while maintaining scholarly rigor and ethical standards.
 
-[![GitHub issues](https://img.shields.io/github/issues/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/issues)
-[![GitHub forks](https://img.shields.io/github/forks/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/network)
-[![GitHub stars](https://img.shields.io/github/stars/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/stargazers)
-[![Code license](https://img.shields.io/github/license/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/blob/main/LICENSE-AGPL.md)
-[![Data license](https://img.shields.io/github/license/maehr/open-research-data-template.svg)](https://github.com/maehr/open-research-data-template/blob/main/LICENSE-CCBY.md)
-[![DOI](https://zenodo.org/badge/614287827.svg)](https://zenodo.org/badge/latestdoi/ZENODO_RECORD)
+[![GitHub issues](https://img.shields.io/github/issues/maehr/critical-ai-literacy-in-practice.svg)](https://github.com/maehr/critical-ai-literacy-in-practice/issues)
+[![GitHub forks](https://img.shields.io/github/forks/maehr/critical-ai-literacy-in-practice.svg)](https://github.com/maehr/critical-ai-literacy-in-practice/network)
+[![GitHub stars](https://img.shields.io/github/stars/maehr/critical-ai-literacy-in-practice.svg)](https://github.com/maehr/critical-ai-literacy-in-practice/stargazers)
+[![Code license](https://img.shields.io/github/license/maehr/critical-ai-literacy-in-practice.svg)](https://github.com/maehr/critical-ai-literacy-in-practice/blob/main/LICENSE-AGPL.md)
+[![Data license](https://img.shields.io/github/license/maehr/critical-ai-literacy-in-practice.svg)](https://github.com/maehr/critical-ai-literacy-in-practice/blob/main/LICENSE-CCBY.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17086256.svg)](https://doi.org/10.5281/zenodo.17086256)
 
-## Why use a template (even for small datasets)?
+## About the Project
 
-- Share your [open research data](#open-research-data) with others
-- Write better [documentation](#documentation) for yourself and the community
-- Write more [consistent](#consistency) code and encourage collaboration
-- Increase [security](#security)
-- Follow accepted [ethics](#ethics)
+This research explores critical AI literacy in digital humanities practice through case studies from Swiss institutions. We demonstrate how scholars can engage with AI tools responsibly while maintaining academic integrity and ethical standards.
 
-## How this template helps you
+### Key Research Questions
 
-### Open research data
+- How can digital humanities scholars develop critical AI literacy?
+- What frameworks guide responsible AI implementation in research?
+- How do current DH projects in Switzerland use AI tools ethically?
+- What lessons can we learn from existing practices?
 
-- Citeable via [DOI](https://www.doi.org/) (and [CITATION.cff](https://citation-file-format.github.io/))
-- Automatic long-term archiving via [Zenodo](https://zenodo.org/)
-- Licensed under a non-restrictive [AGPL 3.0](LICENSE-AGPL.md) and [CC BY 4.0](LICENSE-CCBY.md) license according to [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-sharing.html#step-3-choose-a-licence-and-link-to-your-paper-and-code)
-- Templates for reporting data issues using a custom template `github/ISSUE_TEMPLATE/data_issue_report.yml`
+### Core Findings
 
-### Documentation
+- **AI is pervasive** in academic research and requires critical engagement
+- **Historical understanding** of AI development provides essential context
+- **Critical AI literacy frameworks** can guide responsible implementation
+- **Swiss DH projects** demonstrate practical approaches to ethical AI use
 
-- `README.md` according to [www.makeareadme.com](https://www.makeareadme.com/) and [The Turing Way](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-readme.html)
-- `CHANGELOG.md` according to [keepachangelog.com](https://keepachangelog.com/)
-- Automated [CHANGELOG.md](CHANGELOG.md) via [git-cliff](https://github.com/orhun/git-cliff)
-- `package.json` via [npm docs](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)
-- Accessible documentation via [gh-pages](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages) and [Quarto](https://quarto.org/)
+## Critical AI Literacy Framework
 
-### Consistency
+Our research identifies six key components of critical AI literacy for digital humanities scholars:
 
-- Consistent formatting via [Prettier](https://prettier.io/)
-- Consistent commit messages according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) via [husky](https://github.com/typicode/husky)
-- Consistent versioning via [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
-- Consistent [fork and pull](https://gist.github.com/Chaser324/ce0505fbed06b947d962) workflow via [GitHub branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
-- Consistent issues via [issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
-- Consistent file and folder naming conventions via [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-storage.html#file-naming-conventions)
+### 1. Technical Literacy
+Understanding how AI systems work, their capabilities and limitations, particularly large language models and their training processes.
 
-### Security
+### 2. Epistemological Awareness  
+Questioning what counts as knowledge and how AI shapes knowledge production in scholarly research.
 
-- `SECURITY.md` per [GitHub](https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository)
-- [GitHub Security Alerts](https://github.blog/2017-11-16-introducing-security-alerts-on-github/)
-- Integrity via [GitHub branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
+### 3. Ethical Evaluation
+Considering consent, privacy, transparency, and accountability in AI-assisted research workflows.
 
-### Ethics
+### 4. Social Impact Assessment
+Examining power structures, equity issues, and broader implications of AI adoption in academia.
 
-- `CODE_OF_CONDUCT.md` per the [Contributor Covenant](https://www.contributor-covenant.org/)
-- Friendly initial interactions via [Greetings](https://github.com/actions/starter-workflows/blob/main/automation/greetings.yml)
+### 5. Practical Application
+Developing workflows that maintain scholarly rigor while leveraging AI capabilities effectively.
 
-## Installation
+### 6. Continuous Learning
+Staying informed as AI technology evolves rapidly and adapting practices accordingly.
 
-We recommend using **[GitHub Codespaces](https://github.com/features/codespaces)** for a reproducible setup.
+## Swiss Digital Humanities Projects Using AI
+
+This research documents several innovative approaches to AI integration in Swiss DH projects:
+
+### Re-Experiencing History with AI (University of Zurich)
+The AIncient Studies Lab has developed an interactive platform for generating historically grounded visualizations of Classical antiquity using fine-tuned image and video generation models.
+
+### Mini-Muse: Cultural Archive Access (SUPSI & ETH Library)
+A pilot project exploring NLP and data visualization for exploratory access to digitized historical publications in the E-Periodica archive.
+
+### Alt Text Generation (Stadt.Geschichte.Basel, University of Basel)
+An open-source pipeline that enhances Dublin Core metadata by generating WCAG-compliant alt texts for historical sources and objects.
+
+### Humanities Data Benchmark (RISE, University of Basel)
+An open benchmark suite testing large language and multimodal models on humanities-relevant visual tasks, providing public leaderboards for model performance.
+
+## Educational Initiatives
+
+### University of Bern: Decoding Inequality
+A critical examination of AI systems with focus on inequality and bias issues.
+
+### University of Zurich: ChatGPT and Beyond  
+Interdisciplinary approaches to AI literacy combining practical skills with critical analysis.
+
+## Repository Structure
+
+The structure of this repository follows best practices for open research:
+
+- `presentation/`: RevealJS presentation materials and slides
+- `documentation/`: Additional research documentation  
+- `analysis/`: Research analysis scripts and notebooks
+- `data/`: Research data and findings
+- `src/`: Source code for tools and utilities
+
+## Presentation
+
+This repository includes a comprehensive presentation on Critical AI Literacy in Practice. The presentation covers:
+
+- Historical context of AI development from Turing to modern LLMs
+- Critical AI literacy frameworks for digital humanities
+- Case studies from Swiss institutions
+- Practical approaches to responsible AI implementation
+
+To view the presentation locally:
+
+```bash
+# Preview the presentation  
+cd presentation
+quarto preview
+```
 
 ## Getting Started
 
@@ -151,63 +193,56 @@ After creating your project from this template (either via Codespaces or local s
 
 ## Use
 
-Check that all files are properly formatted.
+These research materials are openly available under open licenses and can be used for educational and research purposes. If you use this research in your work, please cite as specified in `CITATION.cff`. 
+
+The following citation formats are also available through _Zenodo_:
+
+- [BibTeX](https://zenodo.org/record/17086257/export/hx)
+- [CSL](https://zenodo.org/record/17086257/export/csl)
+- [DataCite](https://zenodo.org/record/17086257/export/dcite4)
+- [Dublin Core](https://zenodo.org/record/17086257/export/xd)
+- [DCAT](https://zenodo.org/record/17086257/export/dcat)
+- [JSON](https://zenodo.org/record/17086257/export/json)
+- [JSON-LD](https://zenodo.org/record/17086257/export/schemaorg_jsonld)
+- [GeoJSON](https://zenodo.org/record/17086257/export/geojson)
+- [MARCXML](https://zenodo.org/record/17086257/export/xm)
+
+_Zenodo_ provides an [API (REST & OAI-PMH)](https://developers.zenodo.org/) to access the data. For example, the following command will return the metadata for the most recent version:
 
 ```bash
-npm run check
-```
-
-Format all files.
-
-```bash
-npm run format
-```
-
-Run the wizard to write meaningful commit messages.
-
-```bash
-npm run commit
-```
-
-Run the wizard to create a CHANGELOG.md.
-
-```bash
-npm run changelog
-```
-
-Preview the documentation.
-
-```bash
-quarto preview
+curl -i https://zenodo.org/api/records/17086257
 ```
 
 ## Support
 
 This project is maintained by [@maehr](https://github.com/maehr). Please understand that we can't provide individual support via email. We also believe that help is much more valuable when it's shared publicly, so more people can benefit from it.
 
-| Type                                   | Platforms                                                                              |
-| -------------------------------------- | -------------------------------------------------------------------------------------- |
-| 🚨 **Bug Reports**                     | [GitHub Issue Tracker](https://github.com/maehr/open-research-data-template/issues)    |
-| 📊 **Report bad data**                 | [GitHub Issue Tracker](https://github.com/maehr/open-research-data-template/issues)    |
-| 📚 **Docs Issue**                      | [GitHub Issue Tracker](https://github.com/maehr/open-research-data-template/issues)    |
-| 🎁 **Feature Requests**                | [GitHub Issue Tracker](https://github.com/maehr/open-research-data-template/issues)    |
-| 🛡 **Report a security vulnerability** | See [SECURITY.md](SECURITY.md)                                                         |
-| 💬 **General Questions**               | [GitHub Discussions](https://github.com/maehr/open-research-data-template/discussions) |
+| Type                                   | Platforms                                                                                   |
+| -------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 🚨 **Bug Reports**                     | [GitHub Issue Tracker](https://github.com/maehr/critical-ai-literacy-in-practice/issues)    |
+| 📊 **Report bad data**                 | [GitHub Issue Tracker](https://github.com/maehr/critical-ai-literacy-in-practice/issues)    |
+| 📚 **Docs Issue**                      | [GitHub Issue Tracker](https://github.com/maehr/critical-ai-literacy-in-practice/issues)    |
+| 🎁 **Feature Requests**                | [GitHub Issue Tracker](https://github.com/maehr/critical-ai-literacy-in-practice/issues)    |
+| 🛡 **Report a security vulnerability** | See [SECURITY.md](SECURITY.md)                                                              |
+| 💬 **General Questions**               | [GitHub Discussions](https://github.com/maehr/critical-ai-literacy-in-practice/discussions) |
 
 ## Roadmap
 
-There are currently no changes planned.
+No changes are currently planned.
 
 ## Contributing
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+All contributions to this repository are welcome! If you find errors or problems with the data, or if you want to add new data or features, please open an issue or pull request. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## Authors and credits
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. The available versions are listed in the [tags on this repository](https://github.com/maehr/critical-ai-literacy-in-practice/tags).
+
+## Authors and acknowledgment
 
 - **Moritz Mähr** - _Initial work_ - [maehr](https://github.com/maehr)
-- **Moritz Twente** - _Enhancements_ - [moritztwente](https://github.com/mtwente)
 
-See also the list of [contributors](https://github.com/maehr/open-research-data-template/graphs/contributors) who contributed to this project.
+See also the list of [contributors](https://github.com/maehr/critical-ai-literacy-in-practice/graphs/contributors) who contributed to this project.
 
 ## License
 
