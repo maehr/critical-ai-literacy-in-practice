@@ -1,8 +1,8 @@
 {
-	"name": "REPO_NAME",
-	"description": "SHORT_DESCRIPTION",
-	"author": "FULLNAME <[INSERT CONTACT METHOD]>",
-	"url": "https://github.com/USERNAME/REPO_NAME/issues",
+	"name": "critical-ai-literacy-in-practice",
+	"description": "Lessons from Current DH Projects",
+	"author": "Moritz Mähr <https://github.com/maehr/critical-ai-literacy-in-practice/issues>",
+	"url": "https://github.com/maehr/critical-ai-literacy-in-practice/issues",
 	"license": "AGPL-3.0",
 	"scripts": {
 		"check": "prettier --ignore-path .gitignore  --check . '!{CODE_OF_CONDUCT.md,LICENSE-AGPL.md,LICENSE-CCBY.md,_layouts/default.html,package-lock.json,pnpm-lock.yaml,yarn.lock}'",

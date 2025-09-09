@@ -1,0 +1,40 @@
+/* Custom styles for the presentation */
+
+.center {
+	text-align: center;
+}
+
+.reveal .progress {
+	color: #2780e3;
+}
+
+.reveal .slide-number {
+	color: #2780e3;
+}
+
+/* Custom fragment animations */
+.fragment.fade-in-then-semi-out {
+	opacity: 0;
+	visibility: inherit;
+}
+
+.fragment.fade-in-then-semi-out.visible {
+	opacity: 0.5;
+	visibility: inherit;
+}
+
+.fragment.fade-in-then-semi-out.current-fragment {
+	opacity: 1;
+	visibility: inherit;
+}
+
+/* Code block styling */
+.reveal pre code {
+	max-height: 400px;
+}
+
+/* Image styling */
+.reveal img {
+	max-width: 90%;
+	height: auto;
+}

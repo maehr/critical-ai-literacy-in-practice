@@ -1,0 +1,70 @@
+---
+title: "Critical AI Literacy in Practice"
+subtitle: "Lessons from Current DH Projects"
+author: "Moritz Mähr"
+format:
+  revealjs:
+    theme: default
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-fold: true
+    code-summary: "Show code"
+    incremental: true
+    footer: "Critical AI Literacy in Practice"
+    logo: ../android-chrome-192x192.png
+    css: styles.css
+---
+
+## Introduction {.center}
+
+Welcome to **Critical AI Literacy in Practice**
+
+::: {.fragment}
+Exploring lessons from current Digital Humanities projects
+:::
+
+::: {.fragment}
+Understanding how AI literacy translates to real-world practice
+:::
+
+---
+
+## Research Questions
+
+- How is AI literacy implemented in current DH projects?
+- What are the practical challenges and opportunities?
+- What lessons can we learn for future practice?
+
+---
+
+## Methodology
+
+::: {.incremental}
+- Case study analysis of DH projects
+- Interviews with practitioners
+- Documentation review
+- Best practices synthesis
+:::
+
+---
+
+## Key Findings
+
+Coming soon...
+
+---
+
+## Conclusion
+
+This presentation framework is ready for your research content.
+
+---
+
+## Thank You
+
+Questions and Discussion
+
+::: {.fragment}
+Contact: [GitHub Repository](https://github.com/maehr/critical-ai-literacy-in-practice)
+:::
