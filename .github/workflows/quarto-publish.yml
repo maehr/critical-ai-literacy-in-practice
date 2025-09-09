@@ -80,7 +80,7 @@ jobs:
 
       - name: Convert Reveal.js slides to PDF
         run: |
-          npx decktape --headless reveal _site/presentation/index.html _site/presentation/presentation.pdf
+          npx decktape reveal --headless _site/presentation/index.html _site/presentation/presentation.pdf
 
         continue-on-error: true
 
