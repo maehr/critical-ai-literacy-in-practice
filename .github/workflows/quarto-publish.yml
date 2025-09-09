@@ -80,7 +80,8 @@ jobs:
 
       - name: Convert Reveal.js slides to PDF
         run: |
-          npx decktape reveal --no-sandbox _site/presentation/index.html _site/presentation/presentation.pdf
+          npx decktape --chrome-arg=--no-sandbox reveal _site/presentation/index.html _site/presentation/presentation.pdf
+
         continue-on-error: true
 
       - name: JamPack Optimization
