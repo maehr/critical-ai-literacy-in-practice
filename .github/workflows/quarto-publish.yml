@@ -80,7 +80,11 @@ jobs:
 
       - name: Convert Reveal.js slides to PDF
         run: |
-          npx decktape reveal _site/presentation/index.html _site/presentation/presentation.pdf
+          python3 -m http.server 5000 --directory _site &
+          until curl -fsS http://127.0.0.1:5000/presentation/index.html >/dev/null; do sleep 0.5; done
+          npx decktape reveal \
+            http://127.0.0.1:5000/presentation/index.html \
+            _site/presentation/presentation.pdf
 
         continue-on-error: true
 
